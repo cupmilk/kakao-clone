@@ -3,6 +3,10 @@
 @import "components/_loginpage-header";
 @import "components/_loginPage-form";
 @import "./components/_nav-bar";
+@import "./components/_screen-header";
+@import "./pages/_friends";
+@import "./components/_user-components";
+@import "./pages/_chats";
 
 @font-face {
   font-family: "BMJUA";
@@ -13,4 +17,5 @@
 }
 body {
   font-family: "BMJUA";
+  color: #2e363e;
 }

@@ -1,0 +1,35 @@
+@import "../base/_variable";
+
+#AD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  padding: 15px 0;
+  font-weight: 550;
+  margin-bottom: 10px;
+
+  & span {
+    margin-right: 5px;
+  }
+  & i {
+    margin: 0 3px;
+    font-size: 14px;
+  }
+}
+
+.friends-screen {
+  padding: 0 #{$horizontal__space};
+
+  &__channel {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 15px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+  }
+}

@@ -260,7 +260,7 @@ a {
 
 .nav__ul__li__link {
   position: relative;
-  color: #acadb1;
+  color: #2e363e;
 }
 
 .nav__ul__li__link__chat__notic {
@@ -288,6 +288,119 @@ a {
   height: 7px;
 }
 
+.screen-header {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.screen-header__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 15px;
+  position: relative;
+}
+
+.screen-header__icons__plus {
+  font-size: 10px;
+  position: absolute;
+  top: -2.5px;
+  right: -2.25px;
+  background-color: white;
+}
+
+#AD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  padding: 15px 0;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+#AD span {
+  margin-right: 5px;
+}
+
+#AD i {
+  margin: 0 3px;
+  font-size: 14px;
+}
+
+.friends-screen {
+  padding: 0 15px;
+}
+
+.friends-screen__channel {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+
+.user-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-component__colum__notice {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__colum {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__colum__profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+}
+
+.user-component__colum__profile--xl {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.user-component__colum__profile--sm {
+  width: 45px;
+  height: 45px;
+  border-radius: 25%;
+}
+
+.user-component__colum__text {
+  padding-left: 15px;
+}
+
+.user-component__colum__text__name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.user-component__colum__text__name--not-bold {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.user-component__colum__text__subtitle {
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 @font-face {
   font-family: "BMJUA";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff") format("woff");
@@ -297,5 +410,6 @@ a {
 
 body {
   font-family: "BMJUA";
+  color: #2e363e;
 }
 /*# sourceMappingURL=style.css.map */
