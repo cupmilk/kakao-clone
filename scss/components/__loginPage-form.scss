@@ -1,0 +1,51 @@
+$kakao_yellow: #fff313;
+
+.loginPage-form {
+  display: flex;
+  //   background-color: aqua;
+  flex-direction: column;
+
+  margin: 0 5%;
+  width: 90%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    width: 70%;
+    border: none;
+    padding: 25px;
+    font-size: 19px;
+    margin-bottom: 10px;
+
+    &:not([type="submit"]) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      transition: border-color 0.3s ease-in-out;
+      padding: 27px 0 16px 0;
+    }
+
+    &::placeholder {
+      text-align: center;
+      justify-items: baseline;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    &:focus {
+      border-color: #{$kakao_yellow};
+    }
+  }
+
+  &__btn {
+    border-radius: 10px;
+    background-color: #{$kakao_yellow};
+    cursor: pointer;
+  }
+
+  &__link {
+    font-size: 14px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: inherit;
+  }
+}

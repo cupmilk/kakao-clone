@@ -1,0 +1,19 @@
+.loginPage-header {
+  margin: 90px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.loginPage_header__title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.loginPage_header__text {
+  width: 60%;
+  opacity: 0.5;
+  font-weight: 500;
+}

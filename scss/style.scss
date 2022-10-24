@@ -1,5 +1,15 @@
-@import "reset";
+@import "base/_reset";
+@import "components/_status-bar";
+@import "components/_loginpage-header";
+@import "components/_loginPage-form";
 
+@font-face {
+  font-family: "BMJUA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  background-color: red;
+  font-family: "BMJUA";
 }
