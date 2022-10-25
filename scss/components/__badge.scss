@@ -1,0 +1,16 @@
+@mixin badge {
+  display: flex;
+  background-color: tomato;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.badge {
+  @include badge;
+}

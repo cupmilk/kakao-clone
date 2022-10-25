@@ -6,7 +6,9 @@
 @import "./components/_screen-header";
 @import "./pages/_friends";
 @import "./components/_user-components";
-@import "./pages/_chats";
+
+@import "./base/_variable";
+@import "./pages/_find";
 
 @font-face {
   font-family: "BMJUA";
@@ -18,4 +20,7 @@
 body {
   font-family: "BMJUA";
   color: #2e363e;
+}
+.main-screen {
+  padding: 0 #{$horizontal__space};
 }

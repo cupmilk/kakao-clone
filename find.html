@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>kakao_clone</title>
+  </head>
+  <body>
+    <div class="status_bar">
+      <div class="status_bar__column">
+        <span>No service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status_bar__column">
+        <span class="status_bar__column--clock"></span>
+      </div>
+      <div class="status_bar__column">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">찾기</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span>
+          <i class="fa-regular fa-comment"></i>
+          <i class="fa-solid fa-plus screen-header__icons__plus"></i
+        ></span>
+
+        <span><i class="fa-solid fa-music"></i></span>
+        <span><i class="fa-solid fa-gear"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span> Add by contact</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-id-card"></i><span>add by id</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-envelope"></i><span>invite</span>
+        </div>
+      </div>
+
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">추천 친구</h6>
+        <span class="recommended-friends__text">추천 친구가 없습니다</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__bar">
+          <h6 class="open-chat__bar__title">오픈채팅</h6>
+          <span class="open-chat__bar__text">
+            Go to Openchat Home
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </div>
+        <div class="open-chat__colum">
+          <div class="open-chat__colum__text">
+            <h3 class="open-chat__colum__text__title">#CGV</h3>
+            <span class="open-chat__colum__text__tag"> #CGV#MOVIE </span>
+            <div class="open-chat__colum__text__subTitle">
+              <img src="resource/CGV.jpg" />
+              <span class="open-chat__colum__text__subTitle__member">
+                802 members</span
+              >
+              <span class="open-chat__colum__text__subTitle__active">
+                Active</span
+              >
+            </div>
+          </div>
+          <div class="open-chat__colum__Thumbnail">
+            <img class="open-chat__colum__Thumbnail__img" />
+            <span class="open-chat__colum__Thumbnail__views"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__ul__li">
+          <a class="nav__ul__li__link" href="friends.html"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+        </li>
+        <li class="nav__ul__li">
+          <a class="nav__ul__li__link" href="chats.html">
+            <span class="nav__ul__li__link__chat__notic">1</span>
+            <i class="fa-regular fa-comment"></i
+          ></a>
+        </li>
+        <li class="nav__ul__li">
+          <a class="nav__ul__li__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="nav__ul__li__link__find" />
+          </a>
+        </li>
+        <li class="nav__ul__li">
+          <a class="nav__ul__li__link" href="#">
+            <span class="nav__ul__li__link__menu_notic"></span>
+            <i class="fa-solid fa-ellipsis"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="time.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4401986d8e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

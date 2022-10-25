@@ -240,6 +240,19 @@ a {
   color: inherit;
 }
 
+.badge {
+  display: flex;
+  background-color: tomato;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .nav {
   position: fixed;
   bottom: 0;
@@ -261,6 +274,7 @@ a {
 .nav__ul__li__link {
   position: relative;
   color: #2e363e;
+  position: relative;
 }
 
 .nav__ul__li__link__chat__notic {
@@ -270,12 +284,12 @@ a {
   display: flex;
   background-color: tomato;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 23px;
+  height: 23px;
   color: white;
-  font-size: 17px;
+  font-size: 13px;
   font-weight: 600;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -288,8 +302,17 @@ a {
   height: 7px;
 }
 
+.nav__ul__li__link__find {
+  position: absolute;
+  top: 26px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #2e363e;
+}
+
 .screen-header {
-  margin-top: 25px;
+  margin: 25px 0 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -310,8 +333,9 @@ a {
   font-size: 10px;
   position: absolute;
   top: -2.5px;
-  right: -2.25px;
+  right: -2.1px;
   background-color: white;
+  border-radius: 50%;
 }
 
 #AD {
@@ -352,11 +376,20 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
 }
 
 .user-component__colum__notice {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__colum__notice__time {
+  display: block;
+  margin-bottom: 4px;
 }
 
 .user-component__colum {
@@ -401,6 +434,111 @@ a {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-icons i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.find-icons span {
+  display: flex;
+  width: 70px;
+  height: 40px;
+  font-size: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.recommended-friends {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.recommended-friends__title {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+.open-chat {
+  padding-top: 10px;
+}
+
+.open-chat__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.open-chat__bar__text {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.open-chat__bar__text i {
+  font-size: 12px;
+}
+
+.open-chat__colum {
+  margin-top: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.open-chat__colum__text {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+}
+
+.open-chat__colum__text__tag {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.open-chat__colum__text__subTitle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.open-chat__colum__text__subTitle img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.open-chat__colum__text__subTitle__member {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.open-chat__colum__text__subTitle__active {
+  margin-left: 5px;
+  padding-left: 5px;
+  border-left: 1.5px solid rgba(0, 0, 0, 0.2);
+  color: hotpink;
+}
+
 @font-face {
   font-family: "BMJUA";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff") format("woff");
@@ -411,5 +549,9 @@ a {
 body {
   font-family: "BMJUA";
   color: #2e363e;
+}
+
+.main-screen {
+  padding: 0 15px;
 }
 /*# sourceMappingURL=style.css.map */
