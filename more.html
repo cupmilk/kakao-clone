@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>kakao_clone</title>
+  </head>
+  <body>
+    <div class="status_bar">
+      <div class="status_bar__column">
+        <span>No service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status_bar__column">
+        <span class="status_bar__column--clock"></span>
+      </div>
+      <div class="status_bar__column">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span><i class="fa-solid fa-music"></i></span>
+        <span>
+          <a href="settings.html">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-component__colum">
+              <img src="resource/KakaoTalk_logo.svg.png" class="user-component__colum__profile user-component__colum__profile--xl"></img>
+              <div class="user-component__colum__text">
+                  <h4 class="user-component__colum__text__name">홍길동</h4>
+                  <h6 class="user-component__colum__text__subtitle"> +82 10-1234-1234 </h6>
+                  
+              </div>
+              
+            </div>
+            <div class="user-component__colum__notice">
+                <i class="fa-regular fa-message fa-2x"></i>
+            </div>
+        </div>
+        <div class="icons-row">
+            <div class="icons-row__icon">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Calender</span>
+            </div>
+            <div class="icons-row__icon">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Talk Drive</span>
+            </div>
+            <div class="icons-row__icon">
+                <i class="fa-regular fa-face-smile"></i>
+                <span>Emoticons</span>
+            </div>
+            <div class="icons-row__icon">
+                <i class="fa-solid fa-bars"></i>
+                <span>Themes</span>
+            </div>
+            <div class="icons-row__icon">
+                <i class="fa-solid fa-share-nodes"></i>
+                <span>Account</span>
+            </div>
+            <div class="icons-row__icon">
+                <i class="fa-regular fa-comments"></i>
+                <span>Openchat</span>
+            </div>
+        </div>
+        <div class="more-suggections">
+            <div class="more-suggections__title">
+                <h4>Suggections</h4>
+            </div>
+            <div class="more-suggections__icons">
+                <div class="more-suggections__icons__icon"> 
+                    <img class="more-suggections__icons__icon__img" src="resource/카카오스토리_아이콘.jpg"/>
+                    <span>KaKao Story</span>
+                </div>
+                <div class="more-suggections__icons__icon"> 
+                    <img class="more-suggections__icons__icon__img" src="resource/Kakaofriends.png"/>
+                    <span>KaKao Friends</span>
+                </div>
+                <div class="more-suggections__icons__icon"> 
+                    <img class="more-suggections__icons__icon__img" src="resource/카카오게임즈.jpg"/>
+                    <span>KaKao Game</span>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__ul__li">
+          <a class="nav__ul__li__link" href="friends.html"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+        </li>
+        <li class="nav__ul__li">
+          <a class="nav__ul__li__link" href="chats.html">
+            <span class="nav__ul__li__link__chat__notic">1</span>
+            <i class="fa-regular fa-comment"></i
+          ></a>
+        </li>
+        <li class="nav__ul__li">
+          <a class="nav__ul__li__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </li>
+        <li class="nav__ul__li">
+          <a class="nav__ul__li__link" href="more.html">
+            <span class="nav__ul__li__link__menu_notic"></span>
+            <i class="fa-solid fa-ellipsis"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="time.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4401986d8e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

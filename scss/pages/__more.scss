@@ -1,0 +1,39 @@
+.more-screen {
+  .icons-row {
+    margin-top: 10px;
+  }
+
+  .more-suggections {
+    margin-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+    &__title {
+      margin-top: 15px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &__icons {
+      display: flex;
+      flex-wrap: wrap;
+
+      &__icon {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25%;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.5);
+        &__img {
+          border-radius: 10px;
+          width: 47px;
+          height: 47px;
+        }
+        & span {
+          font-size: 12px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

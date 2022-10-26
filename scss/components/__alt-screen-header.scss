@@ -1,0 +1,47 @@
+@import "../base/_variable";
+
+.alt-header {
+  display: flex;
+  padding: #{$horizontal__space};
+  align-items: center;
+  justify-content: center;
+
+  &__column {
+    &:first-child {
+      margin-right: auto;
+    }
+    &:last-child {
+      margin-left: auto;
+    }
+
+    &__title {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+}
+
+.setting-screen {
+  .settings_list {
+    display: flex;
+    flex-direction: column;
+    &__setting {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      display: flex;
+
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 15px;
+
+      & i {
+        font-size: 20px;
+        margin-right: 15px;
+      }
+
+      & span {
+        opacity: 0.4;
+        margin-left: auto;
+      }
+    }
+  }
+}

@@ -143,7 +143,7 @@ a {
 }
 
 .status_bar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   display: flex;
@@ -338,40 +338,6 @@ a {
   border-radius: 50%;
 }
 
-#AD {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(0, 0, 0, 0.3);
-  background-color: #fafafa;
-  padding: 15px 0;
-  font-weight: 550;
-  margin-bottom: 10px;
-}
-
-#AD span {
-  margin-right: 5px;
-}
-
-#AD i {
-  margin: 0 3px;
-  font-size: 14px;
-}
-
-.friends-screen {
-  padding: 0 15px;
-}
-
-.friends-screen__channel {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 10px;
-  color: rgba(0, 0, 0, 0.3);
-  font-size: 14px;
-}
-
 .user-component {
   display: flex;
   justify-content: space-between;
@@ -434,26 +400,92 @@ a {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.find-icons {
+.alt-header {
   display: flex;
-  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+}
+
+.alt-header__column__title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.setting-screen .settings_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-screen .settings_list__setting {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.setting-screen .settings_list__setting i {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.setting-screen .settings_list__setting span {
+  opacity: 0.4;
+  margin-left: auto;
+}
+
+#chat-screen {
+  background-color: #abc1d1;
+  height: 1000vh;
+}
+
+#chat-screen .status_bar {
+  background-color: #abc1d1;
+}
+
+#chat-screen .alt-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+}
+
+#chat-screen .main-chat .chat_timeStamp {
+  margin-top: 50px;
+}
+
+.icons-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.find-icons__icon {
+.icons-row__icon {
   display: flex;
+  width: 25%;
+  margin-top: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.find-icons i {
+.icons-row i {
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-.find-icons span {
+.icons-row span {
   display: flex;
   width: 70px;
   height: 40px;
@@ -503,6 +535,9 @@ a {
 .open-chat__colum {
   margin-top: 10px;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -537,6 +572,103 @@ a {
   padding-left: 5px;
   border-left: 1.5px solid rgba(0, 0, 0, 0.2);
   color: hotpink;
+}
+
+.open-chat__colum__Thumbnail {
+  position: relative;
+}
+
+.open-chat__colum__Thumbnail__img {
+  width: 90px;
+  height: 90px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.open-chat__colum__Thumbnail__views {
+  position: absolute;
+  right: 6px;
+  bottom: 10px;
+  padding: 5px 7px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+
+.more-screen .icons-row {
+  margin-top: 10px;
+}
+
+.more-screen .more-suggections {
+  margin-top: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.more-screen .more-suggections__title {
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.more-screen .more-suggections__icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.more-screen .more-suggections__icons__icon {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.more-screen .more-suggections__icons__icon__img {
+  border-radius: 10px;
+  width: 47px;
+  height: 47px;
+}
+
+.more-screen .more-suggections__icons__icon span {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#AD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #fafafa;
+  padding: 15px 0;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+#AD span {
+  margin-right: 5px;
+}
+
+#AD i {
+  margin: 0 3px;
+  font-size: 14px;
+}
+
+.friends-screen {
+  padding: 0 15px;
+}
+
+.friends-screen__channel {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
 }
 
 @font-face {
