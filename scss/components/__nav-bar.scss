@@ -19,7 +19,6 @@
     &__li {
       &__link {
         position: relative;
-        // color: rgb(172, 173, 177);
         color: #2e363e;
         position: relative;
 
@@ -41,7 +40,8 @@
 
         &__find {
           position: absolute;
-          top: 26px;
+          bottom: 14.5px;
+          left: 1.5px;
           width: 22px;
           height: 22px;
           border-radius: 50%;

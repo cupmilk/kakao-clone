@@ -27,3 +27,7 @@ body {
 .main-screen {
   padding: 0 #{$horizontal__space};
 }
+
+html {
+  height: 100vh;
+}

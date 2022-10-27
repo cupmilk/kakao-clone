@@ -1,3 +1,10 @@
+@import "../base/_variable";
+
+@mixin fontsizeopacity {
+  opacity: 0.8;
+  font-size: 13px;
+}
+
 #chat-screen {
   background-color: #abc1d1;
   height: 1000vh;
@@ -14,12 +21,121 @@
   }
 
   .main-chat {
-    background-color: red;
-
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
     .chat__timeStamp {
-      margin-top: 200px;
-      height: 1000px;
-      background-color: red;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      color: white;
+      font-size: 14px;
+      background-color: #92a4b2;
+      padding: 10px;
+      border-radius: 16px;
+    }
+
+    .chat__messages {
+      width: 100%;
+      display: flex;
+
+      & img {
+        width: 50px;
+        height: 50px;
+        border-radius: 40%;
+      }
+
+      &__content {
+        margin: 0px 10px 25px 10px;
+
+        &__author {
+          display: block;
+          @include fontsizeopacity;
+          margin-bottom: 7px;
+        }
+
+        &__info {
+          display: flex;
+          align-items: flex-end;
+
+          &__bubble {
+            background-color: white;
+            font-size: 18px;
+            padding: 13px;
+            border-radius: 0 10px 10px 10px;
+            margin: 0 5px;
+          }
+          &__time {
+            @include fontsizeopacity;
+          }
+        }
+      }
+    }
+
+    .chat__messages--own {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .chat__messages__content {
+        &__info {
+          &__bubble {
+            background-color: #{$kakao_yellow};
+            order: 1;
+            border-radius: 10px 0 10px 10px;
+          }
+          &__time {
+            order: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .reply {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 25px;
+
+    $iconSize: 20px;
+
+    &__colum:first-child {
+      width: 10%;
+      position: relative;
+      & i {
+        position: absolute;
+        top: -8px;
+        left: -15px;
+        font-size: #{$iconSize};
+      }
+    }
+    &__colum:last-child {
+      position: relative;
+      width: 90%;
+
+      & input {
+        width: 90%;
+        height: 30px;
+        border: 0px solid;
+        font-size: 20px;
+      }
+
+      & i {
+        font-size: #{$iconSize};
+        position: absolute;
+        right: 7px;
+        top: 6px;
+      }
+      & i:last-child {
+        right: -20px;
+        top: 6px;
+      }
     }
   }
 }

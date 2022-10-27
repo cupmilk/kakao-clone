@@ -41,7 +41,43 @@
     </header>
 
     <main class="main-screen main-chat">
-      <div class="chat__timeStamp">화요일, 2022-10-25</div>
+      <div class="chat__timeStamp">
+        <span> 화요일, 2022-10-25 </span>
+      </div>
+
+      <div class="chat__messages">
+        <img src="resource/CGV.jpg" />
+        <div class="chat__messages__content">
+          <span class="chat__messages__content__author">CGV</span>
+          <div class="chat__messages__content__info">
+            <span class="chat__messages__content__info__bubble"
+              >할인쿠폰행사</span
+            >
+            <span class="chat__messages__content__info__time">22:32</span>
+          </div>
+        </div>
+      </div>
+      <div class="chat__messages chat__messages--own">
+        <div class="chat__messages__content">
+          <div class="chat__messages__content__info">
+            <span class="chat__messages__content__info__bubble"
+              >어떤게 있나요?</span
+            >
+            <span class="chat__messages__content__info__time">22:32</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="reply">
+        <div class="reply__colum">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="reply__colum">
+          <input type="text" />
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-hashtag"></i>
+        </div>
+      </form>
     </main>
 
     <script src="time.js"></script>
