@@ -33,3 +33,28 @@
     font-size: 14px;
   }
 }
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: #{$kakao_yellow};
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  font-size: 130px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
